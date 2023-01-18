@@ -12,8 +12,6 @@ public class Application {
 		
 		//Player AbataSue = new Player();
 		
-	
-		
 		
 	}
 
