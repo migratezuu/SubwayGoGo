@@ -30,7 +30,6 @@ public class Sandwich{
 		}
 	}
 
-
 	@Override
 	public String toString() {
 		return name ;

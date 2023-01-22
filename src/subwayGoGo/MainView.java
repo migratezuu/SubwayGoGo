@@ -11,7 +11,7 @@ public class MainView {
 		Scanner sc = new Scanner(System.in);
 		Order order = new Order();
 		
-		while(true) {
+		while(true) { 
 			
 			System.out.println(" ");
 			System.out.println("======서브웨이======");

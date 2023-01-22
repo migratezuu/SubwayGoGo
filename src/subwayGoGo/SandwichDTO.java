@@ -42,7 +42,7 @@ public class SandwichDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-
+	
 	public void setBread(String bread) {
 		this.bread = bread;
 	}
