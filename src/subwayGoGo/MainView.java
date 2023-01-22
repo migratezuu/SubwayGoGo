@@ -21,7 +21,9 @@ public class MainView {
 			System.out.println("3. 주문 목록 확인");
 			System.out.println("");
 			System.out.print("메뉴를 선택하세요.  :  ");
+		
 			int no = sc.nextInt();
+			System.out.println("");
 		
 			switch(no) {
 			case 1 :
@@ -32,7 +34,15 @@ public class MainView {
 				break;
 			case 3 :
 				System.out.println(order);
-				break;
+				System.out.print("결제하시려면 1번, 처음으로 돌아가시려면 2번을 눌러주세요. : ");
+				int payment = sc.nextInt();
+				
+				if (payment == 1) {
+					System.out.println("결제가 완료되었습니다.");
+					return;
+				}else {
+					break;
+				}
 			}
 			
 		}
@@ -59,19 +69,23 @@ public class MainView {
 			
 			switch(no) {
 			case 1 :
+				System.out.println("아메리카노가 선택되었습니다.");
 				order.getDrinkOrderList().add(new Drink(1));  
 				break;
 			case 2 :
+				System.out.println("콜라가 선택되었습니다.");
 				order.getDrinkOrderList().add(new Drink(2));  	
 			break;	
 			case 3 :
+				System.out.println("제로콜라가 선택되었습니다.");
 				order.getDrinkOrderList().add(new Drink(3)); 	
 				break;
-				case 4 :
+			case 4 :
+				System.out.println("사이다가 선택되었습니다.");
 				order.getDrinkOrderList().add(new Drink(4));  	
 				break;
 			case 5 :
-				
+				System.out.println("환타가 선택되었습니다.");
 				order.getDrinkOrderList().add(new Drink(5)); 
 				break;
 				
@@ -115,18 +129,43 @@ public class MainView {
 		
 		switch(no) {
 		case 1 : 
+			System.out.println(" ");
+			System.out.println(sandwichs[0].getName()+"을 선택하셨습니다.");
+			System.out.println("");
+			System.out.println(sandwichs[0].getName()+"의 레시피는 ");
+			System.out.println(sandwichs[0].getInformation());
 			order.getSandwichOrderList().add(new Sandwich(1));
 			break;
 		case 2 : 
+			System.out.println(" ");
+			System.out.println(sandwichs[1].getName()+"을 선택하셨습니다.");
+			System.out.println("");
+			System.out.println(sandwichs[1].getName()+"의 레시피는 ");
+			System.out.println(sandwichs[1].getInformation());
 			order.getSandwichOrderList().add(new Sandwich(2));
 			break;
 		case 3 : 
+			System.out.println(" ");
+			System.out.println(sandwichs[2].getName()+"을 선택하셨습니다.");
+			System.out.println("");
+			System.out.println(sandwichs[2].getName()+"의 레시피는 ");
+			System.out.println(sandwichs[2].getInformation());
 			order.getSandwichOrderList().add(new Sandwich(3));
 			break;
 		case 4 : 
+			System.out.println(" ");
+			System.out.println(sandwichs[3].getName()+"을 선택하셨습니다.");
+			System.out.println("");
+			System.out.println(sandwichs[3].getName()+"의 레시피는 ");
+			System.out.println(sandwichs[3].getInformation());
 			order.getSandwichOrderList().add(new Sandwich(4));
 			break;
 		case 5 : 
+			System.out.println(" ");
+			System.out.println(sandwichs[4].getName()+"을 선택하셨습니다.");
+			System.out.println("");
+			System.out.println(sandwichs[4].getName()+"의 레시피는 ");
+			System.out.println(sandwichs[4].getInformation());
 			order.getSandwichOrderList().add(new Sandwich(5));
 			break;
 		case 6 :

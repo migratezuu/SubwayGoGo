@@ -25,7 +25,8 @@ public class Order {
 	
 	@Override
 	public String toString() {
-		return "주문 : " + drinkOrderList + sandwichOrderList;
+		return "주문 목록 \n" + "음료 : " +drinkOrderList  + "\n" +"샌드위치 : "+ sandwichOrderList;
+		
 	}
 	
 }

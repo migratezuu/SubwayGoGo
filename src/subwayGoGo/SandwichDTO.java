@@ -18,7 +18,7 @@ public class SandwichDTO {
 		this.vegetable = vegetable;
 		this.sauce = sauce;
 	}
-
+ 
 	public String getName() {
 		return name;
 	}

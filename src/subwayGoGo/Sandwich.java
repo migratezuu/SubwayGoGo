@@ -33,7 +33,7 @@ public class Sandwich{
 
 	@Override
 	public String toString() {
-		return "샌드위치 : " + name ;
+		return name ;
 	}
 
 
